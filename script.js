@@ -81,14 +81,17 @@ form.addEventListener('submit', (e) => {
     ['name', (v) => v.trim().length > 1, 'Please enter your name.'],
     ['phone', (v) => v.replace(/\D/g, '').length >= 10, 'Please enter a 10-digit phone number.'],
     ['email', (v) => !v || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v), 'That email doesn’t look right.'],
-    ['service', (v) => v !== '', 'Please choose a type of job.'],
+    ['service', (v) => v !== '', 'Pick at least one type of job.'],
     ['town', (v) => v.trim().length > 1, 'Please enter your town.'],
   ];
 
   checks.forEach(([id, ok, message]) => {
-    // form.elements.service is the radio group; its .value is the checked option
+    // service is a group of checkboxes, so its value is the ticked options joined together
     const field = id === 'service' ? form.elements.service[0] : form.elements[id];
-    if (!ok(form.elements[id].value)) {
+    const value = id === 'service'
+      ? [...form.querySelectorAll('[name="service"]:checked')].map((c) => c.value).join(', ')
+      : form.elements[id].value;
+    if (!ok(value)) {
       setError(field, message);
       firstBad ||= field;
     } else {

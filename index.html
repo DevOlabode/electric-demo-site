@@ -8,23 +8,19 @@
   <meta name="robots" content="noindex">
   <meta property="og:title" content="Prairie Current Electric & Solar (Demo site)">
   <meta property="og:description" content="Demo website for a local trades business, built by Samuel Olabode, web developer in Edmonton.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23f2a900'/%3E%3Cpath d='M18 4 8 18h7l-2 10 10-14h-7z' fill='%23151a20'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ffc400'/%3E%3Cpath d='M18 4 8 18h7l-2 10 10-14h-7z' fill='%23111418'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..100,400..900&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="demo-bar" role="note">
-    <p>Demo website by Samuel Olabode. Prairie Current is a made-up business. Want a site like this? Text <a href="sms:+18254611264">825-461-1264</a></p>
-  </div>
-
   <header class="site-header">
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="Prairie Current Electric and Solar, home">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4"/><path d="M18 4 8 18h7l-2 10 10-14h-7z"/></svg>
-        <span class="brand-text"><strong>Prairie Current</strong><span>Electric &amp; Solar</span></span>
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32"/><path d="M18 4 8 18h7l-2 10 10-14h-7z"/></svg>
+        <span class="brand-text">Prairie Current<span>Electric &amp; Solar</span></span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
         <span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span>
@@ -32,10 +28,10 @@
       <nav id="site-nav" class="site-nav" aria-label="Main">
         <a href="#services">Services</a>
         <a href="#solar">Solar</a>
-        <a href="#projects">Our work</a>
-        <a href="#areas">Areas</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#faq">FAQ</a>
         <a href="sms:+18254611264" class="nav-phone">Text (825) 461-1264</a>
-        <a href="#quote" class="btn btn-accent btn-sm">Get a quote</a>
+        <a href="#quote" class="nav-cta">Free quote</a>
       </nav>
     </div>
   </header>
@@ -43,60 +39,81 @@
   <main id="top">
 
     <section class="hero">
-      <img class="hero-bg" src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?w=2000&q=75&auto=format&fit=crop" alt="" width="2000" height="1333" fetchpriority="high">
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?w=2000&q=75&auto=format&fit=crop" alt="Installer lifting a solar panel into place on a shingled roof" width="2000" height="1333" fetchpriority="high">
+      <a href="#demo" class="demo-tape">Demo site &middot; made-up business</a>
       <div class="container hero-inner">
-        <h1>Electrical and solar work around Edmonton</h1>
-        <p class="lead">Homes, acreages and shops. You get a written quote within two business days, and the Master Electrician who quotes your job is on site to do it.</p>
-        <div class="hero-actions">
-          <a href="#quote" class="btn btn-accent">Request a quote</a>
-          <a href="sms:+18254611264" class="btn btn-outline">Text (825) 461-1264</a>
-        </div>
-        <p class="hero-facts">Licensed and insured &nbsp;/&nbsp; Family-run since 2009 &nbsp;/&nbsp; Based in Fort Saskatchewan</p>
-      </div>
-    </section>
-
-    <section class="section about">
-      <div class="container about-grid">
-        <img src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?w=1000&q=75&auto=format&fit=crop" alt="Electrician testing an electrical panel with a multimeter" width="1000" height="1100" loading="lazy">
-        <div>
-          <h2>About us</h2>
-          <p>I started Prairie Current in 2009 after twelve years wiring houses and farm shops for bigger contractors. We're still small on purpose: four electricians, three trucks, and I look at every job before we quote it.</p>
-          <p>Most of our work comes from people who've used us before or heard about us from a neighbour. That's why we pull permits on everything, book the inspections ourselves, and sweep up before we leave.</p>
-          <p class="signoff">Mike Hendricks<span>Owner and Master Electrician</span></p>
+        <div class="hero-panel">
+          <h1>Electricians and solar installers for the Edmonton region</h1>
+          <p>Homes, acreages and shops since 2009. Written quotes within two business days, permits on every job.</p>
+          <div class="hero-actions">
+            <a href="#quote" class="btn btn-ink">Get a free quote</a>
+            <a href="sms:+18254611264" class="btn btn-line">Text (825) 461-1264</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section section-alt">
+    <section class="section how">
       <div class="container">
-        <div class="section-head">
+        <h2>How we work</h2>
+        <p class="intro">A family-run crew out of Fort Saskatchewan: four electricians, three trucks, and a Master Electrician on every quote.</p>
+        <div class="promises">
+          <div>
+            <h3>Permit on every job</h3>
+            <p>Even the small ones. We book the inspection and you get the paperwork.</p>
+          </div>
+          <div>
+            <h3>Price in writing</h3>
+            <p>A fixed quote before we start. If something changes on site, we ask first.</p>
+          </div>
+          <div>
+            <h3>Same crew throughout</h3>
+            <p>The electrician who quotes your job is the one who shows up to do it.</p>
+          </div>
+          <div>
+            <h3>Site left clean</h3>
+            <p>Drop sheets down, drywall dust vacuumed, old parts hauled away.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-grey">
+      <div class="container">
+        <div class="head-row">
           <h2>Services</h2>
           <p>Not sure if we do it? Text and ask. If it runs on power, we can usually help.</p>
         </div>
-        <div class="services">
-          <div class="service">
+        <div class="svc-grid">
+          <div class="svc">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M13 12l-3 4h3l-1 3"/></svg>
             <h3>Home electrical</h3>
             <p>Outlets, lighting, renovations, basement developments, hot tubs and troubleshooting.</p>
           </div>
-          <div class="service">
+          <div class="svc">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18"/><path d="M9 7h6M9 11h6M9 15h6"/></svg>
             <h3>Panel upgrades</h3>
-            <p>100 to 200 amp upgrades, sub-panels and breaker replacements. Permit and inspection included.</p>
+            <p>100 to 200 amp upgrades, sub-panels and breaker replacements.</p>
           </div>
-          <div class="service">
+          <div class="svc">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18L18 8H6z"/><path d="M8 8l-1 10M12 8v10M16 8l1 10M4.5 13h15"/></svg>
             <h3>Solar PV systems</h3>
             <p>Rooftop and ground-mount systems, sized from a year of your actual power bills.</p>
           </div>
-          <div class="service">
+          <div class="svc">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="10" height="18"/><path d="M14 8h2a2 2 0 0 1 2 2v6a2 2 0 0 0 4 0V9l-2-2"/><path d="M10 8l-2 4h3l-2 4"/></svg>
             <h3>EV chargers</h3>
-            <p>Level 2 chargers in garages and driveways. We check your panel first so you don't pay for an upgrade you don't need.</p>
+            <p>Level 2 chargers in garages and driveways. We check your panel before suggesting an upgrade.</p>
           </div>
-          <div class="service">
+          <div class="svc">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V10l6-4 6 4v11"/><path d="M15 13h6v8M7 21v-5h4v5"/></svg>
             <h3>Farm and acreage</h3>
             <p>Shops, barns, yard lights, well pumps and long underground runs.</p>
           </div>
-          <div class="service">
-            <h3>Maintenance and repair</h3>
-            <p>Tripping breakers, inverter faults, solar checkups and safety inspections for home sales.</p>
+          <div class="svc">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg>
+            <h3>Repairs and inspections</h3>
+            <p>Tripping breakers, inverter faults, solar checkups and inspections for home sales.</p>
           </div>
         </div>
       </div>
@@ -111,7 +128,7 @@
             <li><h3>Site visit</h3><p>We look at your roof or yard, your electrical panel, and twelve months of power bills.</p></li>
             <li><h3>Design and quote</h3><p>You get a panel layout, expected production month by month, and a fixed price in writing.</p></li>
             <li><h3>Permits and install</h3><p>We handle the permit and the utility paperwork, then book the install around your schedule.</p></li>
-            <li><h3>Switch on</h3><p>We set up the monitoring app with you and call after the first month to check the numbers.</p></li>
+            <li><h3>Switch on</h3><p>We set up the monitoring app with you and check in after the first month to compare the numbers.</p></li>
           </ol>
         </div>
 
@@ -121,59 +138,91 @@
           <input type="range" id="bill" min="60" max="600" step="10" value="180">
           <div class="range-scale" aria-hidden="true"><span>$60</span><span>$600+</span></div>
           <dl class="results">
-            <div><dt>System size</dt><dd><span id="r-size">7.9</span> kW</dd></div>
-            <div><dt>Panels</dt><dd id="r-panels">20</dd></div>
-            <div><dt>Yearly production</dt><dd><span id="r-prod">8,640</span> kWh</dd></div>
+            <div><dt>System size</dt><dd><span id="r-size">5.9</span> kW</dd></div>
+            <div><dt>Panels</dt><dd id="r-panels">15</dd></div>
+            <div><dt>Yearly production</dt><dd><span id="r-prod">6,480</span> kWh</dd></div>
             <div><dt>Yearly savings</dt><dd>about $<span id="r-save">1,620</span></dd></div>
           </dl>
           <p class="fine">Based on Edmonton sunshine and average Alberta rates. Shading, roof angle and your actual usage will change these numbers. The site visit is free.</p>
-          <a href="#quote" class="btn btn-accent btn-block">Book a site visit</a>
+          <a href="#quote" class="btn btn-yellow btn-block">Book a site visit</a>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="jobs" class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="head-row">
           <h2>Recent jobs</h2>
+          <p>A few from the past year, with the details customers usually ask about.</p>
         </div>
-        <div class="projects">
-          <figure class="project">
+        <div class="jobs">
+          <article class="job">
             <img src="https://images.unsplash.com/flagged/photo-1566838616631-f2618f74a6a2?w=900&q=75&auto=format&fit=crop" alt="Brick house with solar panels on the roof" width="900" height="600" loading="lazy">
-            <figcaption><strong>8.4 kW rooftop solar</strong>Sherwood Park. 21 panels on a south-facing roof.</figcaption>
-          </figure>
-          <figure class="project">
+            <div>
+              <h3>8.4 kW rooftop solar</h3>
+              <dl class="spec">
+                <div><dt>Where</dt><dd>Sherwood Park</dd></div>
+                <div><dt>What</dt><dd>21 panels on a south-facing roof, new 200 amp main</dd></div>
+                <div><dt>On site</dt><dd>2 days</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="job">
             <img src="https://images.unsplash.com/photo-1660330589257-813305a4a383?w=900&q=75&auto=format&fit=crop" alt="Installer working on a roof" width="900" height="600" loading="lazy">
-            <figcaption><strong>Acreage solar with battery backup</strong>Fort Saskatchewan. 12 kW, keeps the well pump running in an outage.</figcaption>
-          </figure>
-          <figure class="project">
+            <div>
+              <h3>Acreage solar with battery backup</h3>
+              <dl class="spec">
+                <div><dt>Where</dt><dd>Fort Saskatchewan</dd></div>
+                <div><dt>What</dt><dd>12 kW system, battery keeps the well pump running in an outage</dd></div>
+                <div><dt>On site</dt><dd>3 days</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="job">
             <img src="https://images.unsplash.com/photo-1635335874521-7987db781153?w=900&q=75&auto=format&fit=crop" alt="Wiring inside an open switch box" width="900" height="600" loading="lazy">
-            <figcaption><strong>Basement development</strong>St. Albert. Rough-in and finish for a two-bedroom suite.</figcaption>
-          </figure>
-          <figure class="project">
+            <div>
+              <h3>Basement suite wiring</h3>
+              <dl class="spec">
+                <div><dt>Where</dt><dd>St. Albert</dd></div>
+                <div><dt>What</dt><dd>Rough-in and finish for a two-bedroom legal suite</dd></div>
+                <div><dt>On site</dt><dd>5 days over three weeks</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="job">
             <img src="https://images.unsplash.com/photo-1655300256335-beef51a914fe?w=900&q=75&auto=format&fit=crop" alt="House with solar panels" width="900" height="600" loading="lazy">
-            <figcaption><strong>200 amp upgrade and EV charger</strong>Leduc. Power off at 8, back on by 3.</figcaption>
-          </figure>
+            <div>
+              <h3>Panel upgrade and EV charger</h3>
+              <dl class="spec">
+                <div><dt>Where</dt><dd>Leduc</dd></div>
+                <div><dt>What</dt><dd>100 to 200 amp upgrade, Level 2 charger in the garage</dd></div>
+                <div><dt>On site</dt><dd>1 day, power back on by 3</dd></div>
+              </dl>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section section-grey">
       <div class="container">
-        <div class="section-head">
+        <div class="head-row">
           <h2>What customers say</h2>
           <p class="note">Placeholder reviews for this demo. A real site would show reviews from your own customers.</p>
         </div>
         <div class="reviews">
           <blockquote class="review">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p>They told us what the system would make in December and what it would make in June. A year later our bills are pretty much where they said.</p>
             <footer>Acreage owner, Sturgeon County</footer>
           </blockquote>
           <blockquote class="review">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p>Clear quote, showed up the day they said, cleaned up after. Panel upgrade passed inspection first time.</p>
             <footer>Homeowner, Spruce Grove</footer>
           </blockquote>
           <blockquote class="review">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p>Wired our new shop and put in yard lights. Easy to reach by text and fair on price.</p>
             <footer>Small business owner, Beaumont</footer>
           </blockquote>
@@ -181,20 +230,17 @@
       </div>
     </section>
 
-    <section id="areas" class="section">
-      <div class="container areas-grid">
-        <div>
-          <h2>Areas we serve</h2>
-          <p>We're based in Fort Saskatchewan and work across the Edmonton region. Further out? Ask anyway. We travel for bigger solar jobs.</p>
-        </div>
-        <ul class="areas">
-          <li>Edmonton</li><li>Fort Saskatchewan</li><li>Sherwood Park</li><li>St. Albert</li><li>Spruce Grove</li>
-          <li>Stony Plain</li><li>Leduc</li><li>Beaumont</li><li>Sturgeon County</li><li>Strathcona County</li>
-        </ul>
+    <section id="areas" class="section areas">
+      <div class="container">
+        <h2>Where we work</h2>
+        <p class="towns">
+          <span>Edmonton</span> <span>Fort Saskatchewan</span> <span>Sherwood Park</span> <span>St. Albert</span> <span>Spruce Grove</span> <span>Stony Plain</span> <span>Leduc</span> <span>Beaumont</span> <span>Sturgeon County</span> <span>Strathcona County</span>
+        </p>
+        <p class="muted">Further out? Ask anyway. We travel for bigger solar jobs.</p>
       </div>
     </section>
 
-    <section id="faq" class="section section-alt">
+    <section id="faq" class="section">
       <div class="container faq-grid">
         <h2>Common questions</h2>
         <div class="faq">
@@ -218,45 +264,26 @@
       </div>
     </section>
 
-    <section id="quote" class="section section-dark">
+    <section id="quote" class="section quote">
       <div class="container quote-grid">
-        <div>
-          <h2>Request a quote</h2>
-          <p class="muted">Tell us about the job and we'll get back to you within one business day. If it's urgent, text.</p>
-          <ul class="contact-list">
-            <li><span>Text</span><a href="sms:+18254611264">(825) 461-1264</a></li>
-            <li><span>Email</span>hello@prairiecurrent.example</li>
-            <li><span>Hours</span>Mon to Fri 7:30 to 5:00, Sat by appointment</li>
-          </ul>
+        <div class="quote-intro">
+          <h2>Get a free quote</h2>
+          <p>Tell us about the job and we'll get back to you within one business day.</p>
+          <p class="quote-text">Rather text?<a href="sms:+18254611264">(825) 461-1264</a></p>
+          <p class="hours">Mon to Fri 7:30 to 5:00<br>Saturday by appointment</p>
         </div>
         <form class="quote-form" id="quote-form" novalidate>
-          <div class="form-head">
-            <h3>Tell us about the job</h3>
-            <p>Takes about a minute. Mike reads every request himself.</p>
-          </div>
-
           <fieldset class="field">
-            <legend>What do you need?</legend>
-            <div class="choices">
-              <label class="choice"><input type="radio" name="service" value="Home electrical"><span>Home electrical</span></label>
-              <label class="choice"><input type="radio" name="service" value="Panel upgrade"><span>Panel upgrade</span></label>
-              <label class="choice"><input type="radio" name="service" value="Solar system"><span>Solar system</span></label>
-              <label class="choice"><input type="radio" name="service" value="EV charger"><span>EV charger</span></label>
-              <label class="choice"><input type="radio" name="service" value="Farm or acreage"><span>Farm or acreage</span></label>
-              <label class="choice"><input type="radio" name="service" value="Repair"><span>Repair</span></label>
-              <label class="choice choice-wide"><input type="radio" name="service" value="Something else"><span>Something else, I'll explain below</span></label>
+            <legend>What's the job? <span class="opt">Pick any that apply</span></legend>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="service" value="Home electrical"><span>Home electrical</span></label>
+              <label class="check"><input type="checkbox" name="service" value="Panel upgrade"><span>Panel upgrade</span></label>
+              <label class="check"><input type="checkbox" name="service" value="Solar"><span>Solar</span></label>
+              <label class="check"><input type="checkbox" name="service" value="EV charger"><span>EV charger</span></label>
+              <label class="check"><input type="checkbox" name="service" value="Farm or acreage"><span>Farm or acreage</span></label>
+              <label class="check"><input type="checkbox" name="service" value="Repair"><span>Repair</span></label>
             </div>
           </fieldset>
-
-          <fieldset class="field">
-            <legend>When do you need it? <span class="opt">(optional)</span></legend>
-            <div class="choices choices-row">
-              <label class="choice"><input type="radio" name="timing" value="As soon as possible"><span>As soon as possible</span></label>
-              <label class="choice"><input type="radio" name="timing" value="In the next month"><span>In the next month</span></label>
-              <label class="choice"><input type="radio" name="timing" value="Just planning"><span>Just planning</span></label>
-            </div>
-          </fieldset>
-
           <div class="field-row">
             <div class="field">
               <label for="name">Name</label>
@@ -278,11 +305,10 @@
             </div>
           </div>
           <div class="field">
-            <label for="details">Job details <span class="opt">(optional)</span></label>
-            <textarea id="details" name="details" rows="4" placeholder="For example: 1970s bungalow, want a panel upgrade and an EV charger in the garage."></textarea>
+            <label for="details">Anything else? <span class="opt">(optional)</span></label>
+            <textarea id="details" name="details" rows="3" placeholder="For example: 1970s bungalow, want a panel upgrade and an EV charger in the garage."></textarea>
           </div>
-          <button type="submit" class="btn btn-accent btn-block btn-lg">Send request</button>
-          <p class="form-note">We only use your details to reply about this job. Prefer to text? Send one to <a href="sms:+18254611264">(825) 461-1264</a>.</p>
+          <button type="submit" class="btn btn-ink btn-block">Send it over</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -294,21 +320,21 @@
     <div class="container footer-grid">
       <div>
         <a href="#top" class="brand">
-          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4"/><path d="M18 4 8 18h7l-2 10 10-14h-7z"/></svg>
-          <span class="brand-text"><strong>Prairie Current</strong><span>Electric &amp; Solar</span></span>
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32"/><path d="M18 4 8 18h7l-2 10 10-14h-7z"/></svg>
+          <span class="brand-text">Prairie Current<span>Electric &amp; Solar</span></span>
         </a>
-        <p class="small">Licensed and insured electrical contractor serving the Edmonton region.</p>
+        <p class="small">Licensed and insured electrical contractor, Fort Saskatchewan, Alberta.</p>
       </div>
       <nav class="footer-nav" aria-label="Footer">
         <a href="#services">Services</a>
         <a href="#solar">Solar</a>
-        <a href="#projects">Our work</a>
+        <a href="#jobs">Jobs</a>
         <a href="#areas">Areas</a>
-        <a href="#quote">Get a quote</a>
+        <a href="#quote">Free quote</a>
       </nav>
-      <div class="demo-credit">
-        <p><strong>This is a demo site.</strong> Prairie Current Electric &amp; Solar is not a real business.</p>
-        <p>Designed and built by Samuel Olabode, web developer in Edmonton. Want one for your business? Text <a href="sms:+18254611264">825-461-1264</a>.</p>
+      <div class="demo-credit" id="demo">
+        <p><strong>Demo site.</strong> Prairie Current Electric &amp; Solar is a made-up business, built by Samuel Olabode, web developer in Edmonton.</p>
+        <p>Want a site for your business? Text <a href="sms:+18254611264">825-461-1264</a>.</p>
       </div>
     </div>
     <div class="container footer-base">
@@ -317,8 +343,8 @@
   </footer>
 
   <div class="mobile-cta" aria-label="Quick contact">
-    <a href="sms:+18254611264" class="btn btn-outline">Text</a>
-    <a href="#quote" class="btn btn-accent">Get a quote</a>
+    <a href="sms:+18254611264" class="btn btn-line-light">Text</a>
+    <a href="#quote" class="btn btn-yellow">Free quote</a>
   </div>
 
   <script src="script.js" defer></script>
