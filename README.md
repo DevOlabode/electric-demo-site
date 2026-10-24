@@ -2,13 +2,13 @@
 
 A demo website for a made-up Edmonton-area electrical and solar company. Built by Samuel Olabode to show local trades businesses what a simple, mobile-friendly site looks like.
 
-Plain HTML, CSS and JavaScript. No build step.
+Plain HTML, CSS and JavaScript. No build step. The Archivo font loads from Google Fonts.
 
 ## Files
 
 - `index.html`: the page
 - `styles.css`: all styles (mobile-first, breakpoints at 640px and 960px)
-- `script.js`: mobile menu, footer year, and the quote form (validates, then shows a demo message; nothing is sent)
+- `script.js`: mobile menu, the solar savings estimator (rough demo maths), footer year, and the quote form (validates, then shows a demo message; nothing is sent)
 
 ## Run locally
 

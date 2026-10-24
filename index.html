@@ -8,7 +8,10 @@
   <meta name="robots" content="noindex">
   <meta property="og:title" content="Prairie Current Electric & Solar (Demo site)">
   <meta property="og:description" content="Demo website for a local trades business, built by Samuel Olabode, web developer in Edmonton.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f2a44'/%3E%3Cpath d='M18 4 8 18h7l-2 10 10-14h-7z' fill='%23f5a524'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23f2a900'/%3E%3Cpath d='M18 4 8 18h7l-2 10 10-14h-7z' fill='%23151a20'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,7 +23,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="Prairie Current Electric and Solar, home">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><path d="M18 4 8 18h7l-2 10 10-14h-7z"/></svg>
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4"/><path d="M18 4 8 18h7l-2 10 10-14h-7z"/></svg>
         <span class="brand-text"><strong>Prairie Current</strong><span>Electric &amp; Solar</span></span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
@@ -29,8 +32,9 @@
       <nav id="site-nav" class="site-nav" aria-label="Main">
         <a href="#services">Services</a>
         <a href="#solar">Solar</a>
-        <a href="#projects">Projects</a>
+        <a href="#projects">Our work</a>
         <a href="#areas">Areas</a>
+        <a href="tel:+17805550142" class="nav-phone">(780) 555-0142</a>
         <a href="#quote" class="btn btn-accent btn-sm">Get a quote</a>
       </nav>
     </div>
@@ -39,69 +43,61 @@
   <main id="top">
 
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Licensed and insured &middot; Family-run since 2009</p>
-          <h1>Electrical and solar work for homes, farms and shops around Edmonton.</h1>
-          <p class="lead">We install, repair and maintain. You get a written quote within two business days, and the same crew from start to finish.</p>
-          <div class="hero-actions">
-            <a href="#quote" class="btn btn-accent">Request a quote</a>
-            <a href="tel:+17805550142" class="btn btn-ghost">Call (780) 555-0142</a>
-          </div>
-          <ul class="trust">
-            <li><strong>15+</strong><span>years in the trade</span></li>
-            <li><strong>400+</strong><span>solar panels installed</span></li>
-            <li><strong>2 days</strong><span>to a written quote</span></li>
-          </ul>
+      <img class="hero-bg" src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?w=2000&q=75&auto=format&fit=crop" alt="" width="2000" height="1333" fetchpriority="high">
+      <div class="container hero-inner">
+        <h1>Electrical and solar work around Edmonton</h1>
+        <p class="lead">Homes, acreages and shops. You get a written quote within two business days, and the Master Electrician who quotes your job is on site to do it.</p>
+        <div class="hero-actions">
+          <a href="#quote" class="btn btn-accent">Request a quote</a>
+          <a href="tel:+17805550142" class="btn btn-outline">Call (780) 555-0142</a>
         </div>
-        <figure class="hero-media">
-          <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?w=1100&q=75&auto=format&fit=crop" alt="Installer fitting a solar panel on a shingled roof" width="1100" height="1300" fetchpriority="high">
-          <figcaption class="hero-badge">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path class="tick" d="m8.5 12 2.5 2.5 4.5-5"/></svg>
-            <span><strong>Master Electrician</strong> on every job</span>
-          </figcaption>
-        </figure>
+        <p class="hero-facts">Licensed and insured &nbsp;/&nbsp; Family-run since 2009 &nbsp;/&nbsp; Based in Fort Saskatchewan</p>
       </div>
     </section>
 
-    <section id="services" class="section">
+    <section class="section about">
+      <div class="container about-grid">
+        <img src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?w=1000&q=75&auto=format&fit=crop" alt="Electrician testing an electrical panel with a multimeter" width="1000" height="1100" loading="lazy">
+        <div>
+          <h2>About us</h2>
+          <p>I started Prairie Current in 2009 after twelve years wiring houses and farm shops for bigger contractors. We're still small on purpose: four electricians, three trucks, and I look at every job before we quote it.</p>
+          <p>Most of our work comes from people who've used us before or heard about us from a neighbour. That's why we pull permits on everything, book the inspections ourselves, and sweep up before we leave.</p>
+          <p class="signoff">Mike Hendricks<span>Owner and Master Electrician</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-alt">
       <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">What we do</p>
+        <div class="section-head">
           <h2>Services</h2>
-          <p>Small repairs and full builds. If it runs on power, we can usually help.</p>
-        </header>
-        <div class="cards">
-          <article class="card">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M13 12l-3 4h3l-1 3"/></svg>
+          <p>Not sure if we do it? Call and ask. If it runs on power, we can usually help.</p>
+        </div>
+        <div class="services">
+          <div class="service">
             <h3>Home electrical</h3>
-            <p>Outlets, lighting, renovations, basement developments and troubleshooting.</p>
-          </article>
-          <article class="card">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h6"/></svg>
+            <p>Outlets, lighting, renovations, basement developments, hot tubs and troubleshooting.</p>
+          </div>
+          <div class="service">
             <h3>Panel upgrades</h3>
-            <p>100 to 200 amp upgrades, sub-panels and breaker replacements, with permits handled.</p>
-          </article>
-          <article class="card">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18L18 8H6z"/><path d="M8 8l-1 10M12 8v10M16 8l1 10M4.5 13h15"/></svg>
+            <p>100 to 200 amp upgrades, sub-panels and breaker replacements. Permit and inspection included.</p>
+          </div>
+          <div class="service">
             <h3>Solar PV systems</h3>
-            <p>Rooftop and ground-mount systems, designed for your roof and your power bill.</p>
-          </article>
-          <article class="card">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="10" height="18" rx="2"/><path d="M14 8h2a2 2 0 0 1 2 2v6a2 2 0 0 0 4 0V9l-2-2"/><path d="M10 8l-2 4h3l-2 4"/></svg>
+            <p>Rooftop and ground-mount systems, sized from a year of your actual power bills.</p>
+          </div>
+          <div class="service">
             <h3>EV chargers</h3>
-            <p>Level 2 charger installs in garages and driveways, sized to your panel.</p>
-          </article>
-          <article class="card">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V10l6-4 6 4v11"/><path d="M15 13h6v8M7 21v-5h4v5"/></svg>
+            <p>Level 2 chargers in garages and driveways. We check your panel first so you don't pay for an upgrade you don't need.</p>
+          </div>
+          <div class="service">
             <h3>Farm and acreage</h3>
             <p>Shops, barns, yard lights, well pumps and long underground runs.</p>
-          </article>
-          <article class="card">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg>
+          </div>
+          <div class="service">
             <h3>Maintenance and repair</h3>
-            <p>Solar system checkups, inverter issues, tripping breakers and safety inspections.</p>
-          </article>
+            <p>Tripping breakers, inverter faults, solar checkups and safety inspections for home sales.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -109,89 +105,78 @@
     <section id="solar" class="section section-dark">
       <div class="container solar-grid">
         <div>
-          <p class="eyebrow">Going solar</p>
-          <h2>How a solar install works with us</h2>
-          <p class="muted">Most home systems take four to eight weeks from first visit to switching on. Here is what happens in that time.</p>
+          <h2>Going solar</h2>
+          <p class="muted">A typical home system takes four to eight weeks from the first visit to switching it on. Most of that is permits and utility approval. The install itself is one to three days.</p>
           <ol class="steps">
-            <li><span class="step-num">1</span><div><h3>Site visit</h3><p>We look at your roof or yard, your panel, and a year of your power bills.</p></div></li>
-            <li><span class="step-num">2</span><div><h3>Design and quote</h3><p>You get a system layout, expected yearly production and a fixed price in writing.</p></div></li>
-            <li><span class="step-num">3</span><div><h3>Permits and install</h3><p>We handle permits and utility paperwork. Most installs take one to three days on site.</p></div></li>
-            <li><span class="step-num">4</span><div><h3>Switch on and monitor</h3><p>We walk you through the monitoring app and check in after your first month.</p></div></li>
+            <li><h3>Site visit</h3><p>We look at your roof or yard, your electrical panel, and twelve months of power bills.</p></li>
+            <li><h3>Design and quote</h3><p>You get a panel layout, expected production month by month, and a fixed price in writing.</p></li>
+            <li><h3>Permits and install</h3><p>We handle the permit and the utility paperwork, then book the install around your schedule.</p></li>
+            <li><h3>Switch on</h3><p>We set up the monitoring app with you and call after the first month to check the numbers.</p></li>
           </ol>
         </div>
-        <figure class="solar-media">
-          <img src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?w=900&q=75&auto=format&fit=crop" alt="Electrician testing an electrical panel with a multimeter" width="900" height="1100" loading="lazy">
-        </figure>
+
+        <div class="estimator" id="estimate">
+          <h3>Rough savings estimate</h3>
+          <label for="bill" class="bill-label">Your average monthly power bill <output id="bill-out" for="bill">$180</output></label>
+          <input type="range" id="bill" min="60" max="600" step="10" value="180">
+          <div class="range-scale" aria-hidden="true"><span>$60</span><span>$600+</span></div>
+          <dl class="results">
+            <div><dt>System size</dt><dd><span id="r-size">7.9</span> kW</dd></div>
+            <div><dt>Panels</dt><dd id="r-panels">20</dd></div>
+            <div><dt>Yearly production</dt><dd><span id="r-prod">8,640</span> kWh</dd></div>
+            <div><dt>Yearly savings</dt><dd>about $<span id="r-save">1,620</span></dd></div>
+          </dl>
+          <p class="fine">Based on Edmonton sunshine and average Alberta rates. Shading, roof angle and your actual usage will change these numbers. The site visit is free.</p>
+          <a href="#quote" class="btn btn-accent btn-block">Book a site visit</a>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="section">
       <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Recent work</p>
-          <h2>Projects</h2>
-          <p>A few jobs from the past year.</p>
-        </header>
+        <div class="section-head">
+          <h2>Recent jobs</h2>
+        </div>
         <div class="projects">
-          <article class="project">
-            <div class="project-media"><img src="https://images.unsplash.com/flagged/photo-1566838616631-f2618f74a6a2?w=800&q=75&auto=format&fit=crop" alt="Brick house with solar panels on the roof" width="800" height="560" loading="lazy"></div>
-            <div class="project-body">
-              <p class="tag">Solar</p>
-              <h3>8.4 kW rooftop system</h3>
-              <p class="meta">Sherwood Park &middot; 21 panels</p>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-media"><img src="https://images.unsplash.com/photo-1660330589257-813305a4a383?w=800&q=75&auto=format&fit=crop" alt="Installer working on a roof" width="800" height="560" loading="lazy"></div>
-            <div class="project-body">
-              <p class="tag">Solar</p>
-              <h3>Acreage install with battery backup</h3>
-              <p class="meta">Fort Saskatchewan &middot; 12 kW</p>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-media"><img src="https://images.unsplash.com/photo-1635335874521-7987db781153?w=800&q=75&auto=format&fit=crop" alt="Wiring inside an open switch box" width="800" height="560" loading="lazy"></div>
-            <div class="project-body">
-              <p class="tag">Electrical</p>
-              <h3>Basement development wiring</h3>
-              <p class="meta">St. Albert &middot; Full rough-in and finish</p>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-media"><img src="https://images.unsplash.com/photo-1655300256335-beef51a914fe?w=800&q=75&auto=format&fit=crop" alt="House with solar panels" width="800" height="560" loading="lazy"></div>
-            <div class="project-body">
-              <p class="tag">Panel + EV</p>
-              <h3>200 amp upgrade and EV charger</h3>
-              <p class="meta">Leduc &middot; Done in one day</p>
-            </div>
-          </article>
+          <figure class="project">
+            <img src="https://images.unsplash.com/flagged/photo-1566838616631-f2618f74a6a2?w=900&q=75&auto=format&fit=crop" alt="Brick house with solar panels on the roof" width="900" height="600" loading="lazy">
+            <figcaption><strong>8.4 kW rooftop solar</strong>Sherwood Park. 21 panels on a south-facing roof.</figcaption>
+          </figure>
+          <figure class="project">
+            <img src="https://images.unsplash.com/photo-1660330589257-813305a4a383?w=900&q=75&auto=format&fit=crop" alt="Installer working on a roof" width="900" height="600" loading="lazy">
+            <figcaption><strong>Acreage solar with battery backup</strong>Fort Saskatchewan. 12 kW, keeps the well pump running in an outage.</figcaption>
+          </figure>
+          <figure class="project">
+            <img src="https://images.unsplash.com/photo-1635335874521-7987db781153?w=900&q=75&auto=format&fit=crop" alt="Wiring inside an open switch box" width="900" height="600" loading="lazy">
+            <figcaption><strong>Basement development</strong>St. Albert. Rough-in and finish for a two-bedroom suite.</figcaption>
+          </figure>
+          <figure class="project">
+            <img src="https://images.unsplash.com/photo-1655300256335-beef51a914fe?w=900&q=75&auto=format&fit=crop" alt="House with solar panels" width="900" height="600" loading="lazy">
+            <figcaption><strong>200 amp upgrade and EV charger</strong>Leduc. Power off at 8, back on by 3.</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <section class="section section-tint">
+    <section class="section section-alt">
       <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Sample reviews</p>
+        <div class="section-head">
           <h2>What customers say</h2>
-          <p class="note">These are placeholder reviews for this demo. A real site would show reviews from your customers.</p>
-        </header>
+          <p class="note">Placeholder reviews for this demo. A real site would show reviews from your own customers.</p>
+        </div>
         <div class="reviews">
-          <figure class="review">
-            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>Clear quote, showed up on the day they said, and cleaned up after. The panel upgrade passed inspection the first time.</blockquote>
-            <figcaption>Homeowner, Spruce Grove</figcaption>
-          </figure>
-          <figure class="review">
-            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>They explained exactly what our solar system would produce in winter and summer. Our bills have been close to what they said.</blockquote>
-            <figcaption>Acreage owner, Sturgeon County</figcaption>
-          </figure>
-          <figure class="review">
-            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>Wired our new shop and added yard lights. Easy to reach by text and fair on price.</blockquote>
-            <figcaption>Small business owner, Beaumont</figcaption>
-          </figure>
+          <blockquote class="review">
+            <p>They told us what the system would make in December and what it would make in June. A year later our bills are pretty much where they said.</p>
+            <footer>Acreage owner, Sturgeon County</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>Clear quote, showed up the day they said, cleaned up after. Panel upgrade passed inspection first time.</p>
+            <footer>Homeowner, Spruce Grove</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>Wired our new shop and put in yard lights. Easy to reach by text and fair on price.</p>
+            <footer>Small business owner, Beaumont</footer>
+          </blockquote>
         </div>
       </div>
     </section>
@@ -199,28 +184,49 @@
     <section id="areas" class="section">
       <div class="container areas-grid">
         <div>
-          <p class="eyebrow">Where we work</p>
           <h2>Areas we serve</h2>
-          <p>Based in Fort Saskatchewan and working across the Edmonton region. Outside these areas? Ask anyway, we travel for larger solar jobs.</p>
+          <p>We're based in Fort Saskatchewan and work across the Edmonton region. Further out? Ask anyway. We travel for bigger solar jobs.</p>
         </div>
-        <ul class="chips">
-          <li>Edmonton</li><li>Fort Saskatchewan</li><li>Sherwood Park</li><li>St. Albert</li>
-          <li>Spruce Grove</li><li>Stony Plain</li><li>Leduc</li><li>Beaumont</li>
-          <li>Sturgeon County</li><li>Strathcona County</li>
+        <ul class="areas">
+          <li>Edmonton</li><li>Fort Saskatchewan</li><li>Sherwood Park</li><li>St. Albert</li><li>Spruce Grove</li>
+          <li>Stony Plain</li><li>Leduc</li><li>Beaumont</li><li>Sturgeon County</li><li>Strathcona County</li>
         </ul>
+      </div>
+    </section>
+
+    <section id="faq" class="section section-alt">
+      <div class="container faq-grid">
+        <h2>Common questions</h2>
+        <div class="faq">
+          <details>
+            <summary>Does solar work in Alberta winters?</summary>
+            <p>Yes, though it makes much less in December than in June. Alberta gets more sun than most of Canada, and the credits from summer production help cover winter bills.</p>
+          </details>
+          <details>
+            <summary>Do I need a panel upgrade for an EV charger?</summary>
+            <p>Not always. Plenty of 100 amp homes can run a Level 2 charger after a load calculation, or with a load management device. We check before recommending anything.</p>
+          </details>
+          <details>
+            <summary>Who looks after permits and inspections?</summary>
+            <p>We do. Permits, utility paperwork and booking the inspection are part of the quote.</p>
+          </details>
+          <details>
+            <summary>How soon can you come out?</summary>
+            <p>Usually within a week for a quote visit. Urgent repairs are often same day or next day.</p>
+          </details>
+        </div>
       </div>
     </section>
 
     <section id="quote" class="section section-dark">
       <div class="container quote-grid">
         <div>
-          <p class="eyebrow">Free to ask</p>
           <h2>Request a quote</h2>
-          <p class="muted">Tell us a bit about the job. We reply within one business day, usually sooner.</p>
+          <p class="muted">Tell us about the job and we'll get back to you within one business day. If it's urgent, call.</p>
           <ul class="contact-list">
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+17805550142">(780) 555-0142</a></li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>hello@prairiecurrent.example</span></li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon to Fri 7:30 to 5:00, Sat by appointment</span></li>
+            <li><span>Phone</span><a href="tel:+17805550142">(780) 555-0142</a></li>
+            <li><span>Email</span>hello@prairiecurrent.example</li>
+            <li><span>Hours</span>Mon to Fri 7:30 to 5:00, Sat by appointment</li>
           </ul>
         </div>
         <form class="quote-form" id="quote-form" novalidate>
@@ -272,8 +278,8 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a href="#top" class="brand brand-footer">
-          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><path d="M18 4 8 18h7l-2 10 10-14h-7z"/></svg>
+        <a href="#top" class="brand">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4"/><path d="M18 4 8 18h7l-2 10 10-14h-7z"/></svg>
           <span class="brand-text"><strong>Prairie Current</strong><span>Electric &amp; Solar</span></span>
         </a>
         <p class="small">Licensed and insured electrical contractor serving the Edmonton region.</p>
@@ -281,7 +287,7 @@
       <nav class="footer-nav" aria-label="Footer">
         <a href="#services">Services</a>
         <a href="#solar">Solar</a>
-        <a href="#projects">Projects</a>
+        <a href="#projects">Our work</a>
         <a href="#areas">Areas</a>
         <a href="#quote">Get a quote</a>
       </nav>
@@ -296,7 +302,7 @@
   </footer>
 
   <div class="mobile-cta" aria-label="Quick contact">
-    <a href="tel:+17805550142" class="btn btn-ghost-dark">Call</a>
+    <a href="tel:+17805550142" class="btn btn-outline">Call</a>
     <a href="#quote" class="btn btn-accent">Get a quote</a>
   </div>
 
