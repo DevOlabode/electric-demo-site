@@ -26,7 +26,7 @@ Or from this folder: `npx vercel` then `npx vercel --prod`.
 
 - Open it on your phone and check that the photos load.
 - Photos are hotlinked from Unsplash (free Unsplash License). For reliability, download them into an `images/` folder and update the `src` paths.
-- The phone number (780) 555-0142 and the email are fake on purpose. Your real contact details are in the demo bar and footer.
+- The phone number throughout is your real one, (825) 461-1264, and every button opens a text message to you (sms: links). The email is still fake on purpose.
 - `<meta name="robots" content="noindex">` keeps the fake business out of Google. Leave it in.
 
 ## Photo credits (Unsplash)
