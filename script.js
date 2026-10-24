@@ -65,7 +65,7 @@ function clearError(field) {
   field.removeAttribute('aria-invalid');
 }
 
-form.querySelectorAll('input, select, textarea').forEach((el) => {
+form.querySelectorAll('input, textarea').forEach((el) => {
   el.addEventListener('input', () => clearError(el));
 });
 
@@ -84,8 +84,9 @@ form.addEventListener('submit', (e) => {
   ];
 
   checks.forEach(([id, ok, message]) => {
-    const field = document.getElementById(id);
-    if (!ok(field.value)) {
+    // form.elements.service is the radio group; its .value is the checked option
+    const field = id === 'service' ? form.elements.service[0] : form.elements[id];
+    if (!ok(form.elements[id].value)) {
       setError(field, message);
       firstBad ||= field;
     } else {
