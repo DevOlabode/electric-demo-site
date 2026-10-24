@@ -17,25 +17,27 @@ nav.querySelectorAll('a').forEach((link) => {
 
 // Hide an image's frame gracefully if a photo fails to load
 document.querySelectorAll('img').forEach((img) => {
-  img.addEventListener('error', () => { img.style.visibility = 'hidden'; }, { once: true });
+  const hide = () => { img.style.visibility = 'hidden'; };
+  if (img.complete && img.naturalWidth === 0) hide();
+  else img.addEventListener('error', hide, { once: true });
 });
 
 // Current year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Solar estimator (rough demo numbers: ~$0.25/kWh all-in, ~1,100 kWh per kW per year in Edmonton)
+// Solar estimator (rough demo numbers: ~$0.25/kWh, ~1,100 kWh per kW per year in Edmonton).
+// Fixed delivery and admin fees stay on the bill, so only ~75% of it is energy solar can replace.
 const bill = document.getElementById('bill');
 const fmt = (n) => Math.round(n).toLocaleString('en-CA');
 
 function estimate() {
   const monthly = Number(bill.value);
-  const yearlyKwh = (monthly * 12) / 0.25;
+  const yearlyKwh = (monthly * 12 * 0.75) / 0.25;
   const kw = yearlyKwh / 1100;
   document.getElementById('bill-out').textContent = `$${monthly}${monthly == bill.max ? '+' : ''}`;
   document.getElementById('r-size').textContent = kw.toFixed(1);
   document.getElementById('r-panels').textContent = Math.ceil((kw * 1000) / 410);
   document.getElementById('r-prod').textContent = fmt(kw * 1100);
-  // Fixed delivery and admin fees stay on the bill, so savings are roughly 75% of it
   document.getElementById('r-save').textContent = fmt(monthly * 12 * 0.75);
 }
 bill.addEventListener('input', estimate);
