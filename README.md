@@ -53,8 +53,8 @@ The form in `contact/index.html` does not send anything. To connect it with Web3
 ## Before sharing
 
 - Open it on your phone and check that the photos load.
-- The business phone, (780) 555-0142, and email, hello@prairiecurrent.example, are fake on purpose. Buttons that say "Text" open a message to the fake number.
-- The one real contact is in the footer, on every page: "Text Samuel at 825-461-1264". This is how prospects reach you.
+- Every phone number on the site is your real one, (825) 461-1264, so prospects can reach you from any page. "Text" buttons open a message to it and the Contact and footer numbers call it.
+- The email, hello@prairiecurrent.example, is fake on purpose.
 - `<meta name="robots" content="noindex">` is on every page and keeps the fake business out of Google. Leave it in.
 
 ## Photo credits (Unsplash)

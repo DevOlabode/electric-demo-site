@@ -93,7 +93,6 @@ main:focus { outline: none; }
 .section-dark { background: var(--ink); color: var(--on-dark); }
 .section-dark h2, .section-dark h3 { color: #fff; }
 .muted { color: var(--on-dark); }
-.note { font-size: .92rem; color: var(--muted); font-style: italic; }
 .head-row { margin-bottom: 36px; }
 .head-row h2 { margin-bottom: .3em; }
 .head-row p { margin: 0; max-width: 36em; }
@@ -155,13 +154,6 @@ main:focus { outline: none; }
 .gallery figcaption { padding-top: 12px; }
 .gallery figcaption strong { display: block; color: var(--ink); font-size: 1.2rem; font-weight: 850; font-stretch: 75%; text-transform: uppercase; line-height: 1.15; margin-bottom: 4px; }
 .gallery figcaption span { font-size: .95rem; }
-
-/* Reviews */
-.reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px; }
-.review { margin: 0; padding: 28px 24px; background: #fff; }
-.stars { color: var(--ink); letter-spacing: 2px; margin-bottom: 14px; }
-.review p { color: var(--ink); font-size: 1.1rem; }
-.review footer { color: var(--muted); font-size: .9rem; padding-top: 14px; border-top: 1px solid var(--line); }
 
 /* Areas */
 .areas { background: var(--steel); color: var(--on-dark); }
