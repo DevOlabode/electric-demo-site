@@ -109,6 +109,8 @@ main:focus { outline: none; }
 /* Services matrix */
 .svc-grid { display: grid; background: #fff; border: 1px solid var(--line); }
 .svc { padding: 28px 24px; border-bottom: 1px solid var(--line); }
+.svc img { width: calc(100% + 48px); max-width: none; margin: -28px -24px 20px; aspect-ratio: 3 / 2; object-fit: cover; background: var(--grey); }
+.svc h3 { font-size: 1.5rem; font-stretch: 72%; font-weight: 850; text-transform: uppercase; }
 .svc p { margin: 0; }
 .svc-link { display: inline-block; margin-top: 14px; color: var(--ink); font-weight: 800; font-stretch: 85%; text-transform: uppercase; letter-spacing: .03em; font-size: .92rem; }
 .svc-grid-3 .svc:last-child { border-bottom: 0; }
