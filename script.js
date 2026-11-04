@@ -25,7 +25,7 @@ document.querySelectorAll('img').forEach((img) => {
 // Current year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Solar estimator (rough demo numbers: ~$0.25/kWh, ~1,100 kWh per kW per year in Edmonton).
+// Solar estimator, on the Services page (rough demo numbers: ~$0.25/kWh, ~1,100 kWh per kW per year in Edmonton).
 // Fixed delivery and admin fees stay on the bill, so only ~75% of it is energy solar can replace.
 const bill = document.getElementById('bill');
 const fmt = (n) => Math.round(n).toLocaleString('en-CA');
@@ -40,12 +40,13 @@ function estimate() {
   document.getElementById('r-prod').textContent = fmt(kw * 1100);
   document.getElementById('r-save').textContent = fmt(monthly * 12 * 0.75);
 }
-bill.addEventListener('input', estimate);
-estimate();
+if (bill) {
+  bill.addEventListener('input', estimate);
+  estimate();
+}
 
-// Quote form (demo: validates, then shows a message instead of sending)
+// Quote form, on the Contact page (demo: validates, then shows a message instead of sending)
 const form = document.getElementById('quote-form');
-const status = document.getElementById('form-status');
 
 function setError(field, message) {
   const wrap = field.closest('.field');
@@ -54,10 +55,12 @@ function setError(field, message) {
   if (!msg) {
     msg = document.createElement('span');
     msg.className = 'error';
+    msg.id = `${field.id}-error`;
     wrap.appendChild(msg);
   }
   msg.textContent = message;
   field.setAttribute('aria-invalid', 'true');
+  field.setAttribute('aria-describedby', msg.id);
 }
 
 function clearError(field) {
@@ -65,47 +68,48 @@ function clearError(field) {
   wrap.classList.remove('invalid');
   wrap.querySelector('.error')?.remove();
   field.removeAttribute('aria-invalid');
+  field.removeAttribute('aria-describedby');
 }
 
-form.querySelectorAll('input, textarea').forEach((el) => {
-  el.addEventListener('input', () => clearError(el));
-});
+if (form) {
+  const formStatus = document.getElementById('form-status');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  status.textContent = '';
-  status.className = 'form-status';
-
-  let firstBad = null;
-  const checks = [
-    ['name', (v) => v.trim().length > 1, 'Please enter your name.'],
-    ['phone', (v) => v.replace(/\D/g, '').length >= 10, 'Please enter a 10-digit phone number.'],
-    ['email', (v) => !v || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v), 'That email doesn’t look right.'],
-    ['service', (v) => v !== '', 'Pick at least one type of job.'],
-    ['town', (v) => v.trim().length > 1, 'Please enter your town.'],
-  ];
-
-  checks.forEach(([id, ok, message]) => {
-    // service is a group of checkboxes, so its value is the ticked options joined together
-    const field = id === 'service' ? form.elements.service[0] : form.elements[id];
-    const value = id === 'service'
-      ? [...form.querySelectorAll('[name="service"]:checked')].map((c) => c.value).join(', ')
-      : form.elements[id].value;
-    if (!ok(value)) {
-      setError(field, message);
-      firstBad ||= field;
-    } else {
-      clearError(field);
-    }
+  form.querySelectorAll('input, select, textarea').forEach((el) => {
+    el.addEventListener('input', () => clearError(el));
   });
 
-  if (firstBad) {
-    firstBad.focus();
-    return;
-  }
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formStatus.textContent = '';
+    formStatus.className = 'form-status';
 
-  const name = document.getElementById('name').value.trim().split(' ')[0];
-  status.textContent = `Thanks ${name}. On a real site this would go straight to the owner’s inbox. This is a demo, so nothing was sent.`;
-  status.classList.add('ok');
-  form.reset();
-});
+    let firstBad = null;
+    const checks = [
+      ['name', (v) => v.trim().length > 1, 'Please enter your name.'],
+      ['phone', (v) => v.replace(/\D/g, '').length >= 10, 'Please enter a 10-digit phone number.'],
+      ['email', (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()), 'Please enter a valid email address.'],
+      ['service', (v) => v !== '', 'Please choose a service.'],
+    ];
+
+    checks.forEach(([id, ok, message]) => {
+      const field = form.elements[id];
+      if (!ok(field.value)) {
+        setError(field, message);
+        firstBad ||= field;
+      } else {
+        clearError(field);
+      }
+    });
+
+    if (firstBad) {
+      firstBad.focus({ preventScroll: true });
+      firstBad.closest('.field').scrollIntoView({ block: 'center' }); // keeps label and field clear of the sticky bars
+      return;
+    }
+
+    const name = form.elements.name.value.trim().split(' ')[0];
+    formStatus.textContent = `Thanks ${name}. On a real site this would go straight to the owner’s inbox. This is a demo, so nothing was sent.`;
+    formStatus.classList.add('ok');
+    form.reset();
+  });
+}
