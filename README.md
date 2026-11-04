@@ -33,12 +33,12 @@ Replace the files in `images/`. To keep the markup as it is, use the same file n
 
 | File | Used on |
 |---|---|
-| `solar-install-lifting-panel.jpg` | Home hero, Past Work |
+| `solar-install-lifting-panel.jpg` | Home hero, Home preview, Past Work |
 | `solar-brick-house.jpg` | Home preview, Past Work |
 | `solar-installer-harness.jpg` | Home preview, Services, Past Work, About |
-| `solar-hip-roof.jpg` | Past Work |
-| `control-panel-wiring.jpg` | Home preview, Services, Past Work |
-| `panel-testing-multimeter.jpg` | Services, Past Work |
+| `solar-hip-roof.jpg` | Home "What we do", Past Work |
+| `control-panel-wiring.jpg` | Home "What we do", Services, Past Work |
+| `panel-testing-multimeter.jpg` | Home "What we do", Services, Past Work |
 
 ## Making the quote form send
 
